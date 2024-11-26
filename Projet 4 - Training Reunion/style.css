@@ -1,0 +1,527 @@
+/*-----------Body-----------*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(150deg, #686af5, #abacf9);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/*---------Header---------*/
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/*------Nav Links-------*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px auto;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    border-color: rgb(150, 229, 244);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+/*-------Container-------*/
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    margin: 5px auto;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+}
+
+h3 {
+    font-family: "Lora", serif;
+    color: rgb(54, 54, 54);
+    font-size: 24px;
+}
+
+.accueil {
+    margin: 20px auto;
+    color: rgb(181, 244, 255);
+}
+
+main {
+    flex: 1;
+    margin-top: 80px;
+}    
+
+p {
+    font-family: "Roboto", sans-serif;
+    margin: 0 20px;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(24, 24, 24);
+} 
+
+/*----Pictures----*/
+
+.randos-img {
+    width: 400px;
+    height: 230px;
+    padding: 5px 5px;
+    margin: 20px 55px;
+}    
+
+.randos-bis-img {
+    width: 900px;
+    height: 200px;
+    margin-top: 25px;
+}    
+
+#toprandos {
+    color: blanchedalmond;
+    text-decoration: none;
+    scroll-margin-top: 100px;
+}
+
+#toprandos:focus {
+    outline: none;
+    border: none;
+}
+
+.maj {
+    margin-top: 60px;
+}
+
+/*-----Valid message connexion---*/
+#connect-message {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*-----Error message connexion---*/
+.error-message {
+    color: red;
+    margin: 15px auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*------Connect buttons-----*/
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-connect {
+    padding: 10px 45px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #555;
+    border-color: #fff;
+}
+
+#update-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 35px;
+}
+
+.btn-logout {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    margin: 25px auto;
+}
+
+#connect-title {
+    padding-bottom: 15px;
+}
+
+#connect {
+    margin: 10px auto;
+    min-width: 200px;
+}
+
+#connect:hover {
+    border: 2px solid rgb(67, 66, 66);
+}
+
+#infos {
+    border: 1px solid rgb(48, 48, 48);
+    background-color: rgb(0, 160, 188);
+    margin-bottom: 15px;
+}
+
+#infos:hover {
+    border: 1px solid white;
+    background-color: rgb(1, 138, 162);
+}
+
+#height_difference {
+    margin-bottom: 25px;
+}
+
+/*------Login form-------*/
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    min-height: 100%;
+}    
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+.form-container label {
+    padding: 10px;
+}
+
+.form-add-hike {
+    padding: 15px 0;
+}
+
+/*-------------Columns----------------*/
+.welcome-section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.column, .trail {
+    background-color: #8e90f3;
+}
+
+.begin {
+    margin: auto;
+    background-color: #8e90f300;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.column {
+    border: 1px solid #ddd;
+    min-width: 350px;
+    margin: 15px;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.column-right label,
+.column-right input,
+.column-right select {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.column-right .btn {
+    width: auto;
+    margin: 0 auto;
+}
+
+.column-left, .column-right {
+    background: linear-gradient(50deg, #49c1b9, #1372b5);
+    border-radius: 15px;
+}
+
+/*-----------Tableau espaces randonnees-----------*/
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.table-hikes {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+}
+
+.table-hikes th, .table-hikes td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-hikes th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table-hikes tr:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.intro {
+    min-width: 750px;
+}
+
+.top-tab {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/*-----------CRUD Buttons-----------*/
+.btn-update {
+    background-color: #359338;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-update:hover {
+    background-color: #226925;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-delete:hover {
+    background-color: #e52522;
+}
+
+.container.deconnect {
+    align-items: center;
+}
+
+#annul:hover {
+    background-color: #e52522;
+}
+
+#valid:hover {
+    background-color: #226925;
+}
+
+/*-------------Footer------------ */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 24px;
+}
+
+/*----Bouton scroll to top-----*/
+#scroll-to-top {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 4px 8px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20%;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid #3333337a;
+    background-color: rgba(245, 239, 239, 0.486);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    border: 1.5px solid white;
+    background-color: rgba(0, 160, 188, 0.618);
+    color: black;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*----------Media Query Tablet--------------*/
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .randos-img {
+        width: 300px;
+        height: 180px;    
+        margin: 10px 5px;    
+    }
+
+    .randos-bis-img {
+        width: 750px;
+        height: 180px;
+    }       
+}
+
+/*-------Media Query Smartphone-----------*/
+@media (max-width: 768px) {
+
+    /*---------Content page-------*/
+    .container {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .intro {
+        min-width: 250px;
+    }
+
+    .accueil {
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        padding: 3px 5px;
+    }
+
+    #toprandos {
+        scroll-margin-top: 80px;
+    }   
+
+    /*----------Columns content-------*/
+    .columns, .column {
+        flex-direction: column;
+        height: auto;
+        min-width: 300px;
+    }
+
+    .column, .column-left, .column-right {
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .colomn, .trail {
+        max-width: 320px;
+    }
+
+    /*---------Images size----------*/
+    .randos-img {
+        width: 250px;
+        height: 150px;
+        margin: 5px 25px;
+    }
+
+    .randos-bis-img {
+        width: 330px;
+        height: 100px;
+    }
+
+    /*--------Table size------*/
+    .table-hikes {
+        font-size: 0.7rem;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    .table-hikes th, .table-hikes td {
+        padding: 8px 1px;
+    }
+
+    .table-hikes th {
+        font-size: 0.55rem;
+    }
+
+    .table-hikes td {
+        white-space: nowrap;
+    }
+
+    /*--------CRUD Form-------*/
+    .form-container, .connect h2 {
+        margin-top: 7vh;
+    }
+
+    .btn{
+        padding: 10px 10px;
+    }
+
+    .column-right .btn {
+        padding: 10px 25px;
+    }
+
+    .btn-logout {
+        width: 150px;
+    }
+
+    .maj {
+        margin-top: 40px;
+    }    
+
+    /*--------Footer--------*/
+    footer {
+        font-size: 17px;
+    }
+}
